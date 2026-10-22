@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>陈立晖 · 十九岁生日快乐</title>
+  <meta name="description" content="致陈立晖的十九岁生日：愿你此后的每一天，有星辰可追，有热爱可奔赴，有温柔可栖。">
+  <meta name="theme-color" content="#0b0d14">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="陈立晖 · 十九岁生日快乐">
+  <meta property="og:description" content="一份藏在烛光与星光里的生日祝福。">
+  <meta property="og:url" content="https://kathris612.github.io/chenlihui19birthday/">
+  <meta property="og:image" content="https://kathris612.github.io/chenlihui19birthday/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://kathris612.github.io/chenlihui19birthday/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+  <canvas id="ambient" aria-hidden="true"></canvas>
+  <div class="aurora" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="陈立晖 十九岁生日，回到顶部">
+      <span class="brand__seal" aria-hidden="true">陈</span>
+      <span class="brand__text">
+        <strong>陈立晖</strong>
+        <small>NINETEEN</small>
+      </span>
+    </a>
+
+    <p class="topbar__center">
+      <span aria-hidden="true"></span>
+      A LITTLE CELEBRATION FOR YOU
+      <span aria-hidden="true"></span>
+    </p>
+
+    <button class="sound-toggle" id="sound-toggle" type="button" aria-pressed="false" aria-label="开启背景音乐">
+      <span class="sound-toggle__icon" aria-hidden="true">
+        <i></i><i></i><i></i><i></i>
+      </span>
+      <span class="sound-toggle__label">音乐</span>
+    </button>
+  </header>
+
+  <main class="hero">
+    <section class="intro" aria-labelledby="hero-title">
+      <p class="eyebrow reveal" style="--delay: .15s">
+        <span class="eyebrow__line" aria-hidden="true"></span>
+        致 陈立晖 · 十九岁生日
+      </p>
+
+      <h1 class="hero-title" id="hero-title">
+        <span class="hero-title__script reveal" style="--delay: .28s">Happy Birthday</span>
+        <span class="hero-title__cn reveal" style="--delay: .4s">生日快乐</span>
+      </h1>
+
+      <p class="hero-sub reveal" style="--delay: .55s">
+        十九岁，是风开始有了方向，<br>
+        是你走向辽阔人生的第一天。
+      </p>
+
+      <div class="hero-rule reveal" style="--delay: .68s" aria-hidden="true">
+        <span></span><i>✦</i><span></span>
+      </div>
+    </section>
+
+    <section class="cake-scene" aria-label="一个点着蜡烛的三层生日蛋糕">
+      <div class="cake-scene__halo" aria-hidden="true"></div>
+
+      <div class="orbit" aria-hidden="true">
+        <svg viewBox="0 0 700 700">
+          <defs>
+            <path id="orbitPath" d="M54 350 A296 296 0 0 1 646 350"></path>
+          </defs>
+          <circle cx="350" cy="350" r="296" fill="none" stroke="#d6b37a" stroke-opacity=".2" stroke-width=".7" stroke-dasharray="1 8"></circle>
+          <text>
+            <textPath href="#orbitPath" startOffset="50%" text-anchor="middle">
+              HAPPY BIRTHDAY · NINETEEN · A NEW CHAPTER
+            </textPath>
+          </text>
+        </svg>
+      </div>
+
+      <span class="scene-number" aria-hidden="true">19</span>
+
+      <div class="cake-parallax">
+        <svg class="cake-svg" viewBox="65 110 630 790" role="img" aria-labelledby="cakeTitle cakeDesc">
+          <title id="cakeTitle">十九岁生日蛋糕</title>
+          <desc id="cakeDesc">三层香槟奶油蛋糕，点缀灰粉玫瑰与金色叶片，蛋糕顶端立着金色数字 19 和四支点燃的蜡烛。</desc>
+
+          <defs>
+            <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#8a6435"></stop>
+              <stop offset=".18" stop-color="#e8ca95"></stop>
+              <stop offset=".42" stop-color="#b8894d"></stop>
+              <stop offset=".66" stop-color="#f7e1b2"></stop>
+              <stop offset=".85" stop-color="#c69a5c"></stop>
+              <stop offset="1" stop-color="#7b562d"></stop>
+            </linearGradient>
+            <linearGradient id="goldBright" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#fff2cf"></stop>
+              <stop offset=".5" stop-color="#d9b171"></stop>
+              <stop offset="1" stop-color="#8d632f"></stop>
+            </linearGradient>
+            <linearGradient id="goldDark" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#5d3e1d"></stop>
+              <stop offset=".5" stop-color="#b4894e"></stop>
+              <stop offset="1" stop-color="#4c3115"></stop>
+            </linearGradient>
+
+            <linearGradient id="tierBottomGrad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#c8a092"></stop>
+              <stop offset=".10" stop-color="#ead0c2"></stop>
+              <stop offset=".28" stop-color="#fff5ea"></stop>
+              <stop offset=".50" stop-color="#f8e8dc"></stop>
+              <stop offset=".72" stop-color="#fff7ed"></stop>
+              <stop offset=".90" stop-color="#e3c4b6"></stop>
+              <stop offset="1" stop-color="#bd9385"></stop>
+            </linearGradient>
+            <linearGradient id="tierMiddleGrad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#d3ada0"></stop>
+              <stop offset=".12" stop-color="#f1dbce"></stop>
+              <stop offset=".32" stop-color="#fff8ef"></stop>
+              <stop offset=".56" stop-color="#f9e9dd"></stop>
+              <stop offset=".78" stop-color="#fff4e9"></stop>
+              <stop offset=".92" stop-color="#e4c3b6"></stop>
+              <stop offset="1" stop-color="#c3998b"></stop>
+            </linearGradient>
+            <linearGradient id="tierTopGrad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#dcb8aa"></stop>
+              <stop offset=".16" stop-color="#f8e7db"></stop>
+              <stop offset=".38" stop-color="#fffaf3"></stop>
+              <stop offset=".62" stop-color="#faeee4"></stop>
+              <stop offset=".84" stop-color="#e8cbbf"></stop>
+              <stop offset="1" stop-color="#c99e91"></stop>
+            </linearGradient>
+
+            <linearGradient id="frostingGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#fffcf7"></stop>
+              <stop offset=".55" stop-color="#fbece3"></stop>
+              <stop offset="1" stop-color="#eccfc3"></stop>
+            </linearGradient>
+            <linearGradient id="frostingTopGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#fffdf9"></stop>
+              <stop offset=".55" stop-color="#fdf2ea"></stop>
+              <stop offset="1" stop-color="#f1d7ca"></stop>
+            </linearGradient>
+
+            <linearGradient id="plateGrad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#59391a"></stop>
+              <stop offset=".16" stop-color="#b9884a"></stop>
+              <stop offset=".36" stop-color="#f4dea9"></stop>
+              <stop offset=".52" stop-color="#b9894c"></stop>
+              <stop offset=".73" stop-color="#ead09a"></stop>
+              <stop offset=".9" stop-color="#9a6d36"></stop>
+              <stop offset="1" stop-color="#4f3217"></stop>
+            </linearGradient>
+            <radialGradient id="plateTopGrad" cx=".5" cy=".38" r=".7">
+              <stop offset="0" stop-color="#f6e4be"></stop>
+              <stop offset=".58" stop-color="#cba468"></stop>
+              <stop offset="1" stop-color="#8e652f"></stop>
+            </radialGradient>
+
+            <radialGradient id="flameGrad" cx=".5" cy=".68" r=".7">
+              <stop offset="0" stop-color="#fffbe8"></stop>
+              <stop offset=".34" stop-color="#ffe6a8"></stop>
+              <stop offset=".7" stop-color="#f6b55f"></stop>
+              <stop offset="1" stop-color="#e27d3f"></stop>
+            </radialGradient>
+            <linearGradient id="candleBlush" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#b9847c"></stop>
+              <stop offset=".35" stop-color="#f6d8cd"></stop>
+              <stop offset=".7" stop-color="#e6b9ae"></stop>
+              <stop offset="1" stop-color="#a8716b"></stop>
+            </linearGradient>
+            <linearGradient id="candleIvory" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#c6aa93"></stop>
+              <stop offset=".38" stop-color="#fff8ec"></stop>
+              <stop offset=".72" stop-color="#ecd8c5"></stop>
+              <stop offset="1" stop-color="#b09079"></stop>
+            </linearGradient>
+
+            <radialGradient id="roseOuterGrad" cx=".35" cy=".28" r=".8">
+              <stop offset="0" stop-color="#f0c9c2"></stop>
+              <stop offset=".58" stop-color="#dca6a1"></stop>
+              <stop offset="1" stop-color="#b77b79"></stop>
+            </radialGradient>
+            <radialGradient id="roseMidGrad" cx=".36" cy=".3" r=".78">
+              <stop offset="0" stop-color="#fbe3dc"></stop>
+              <stop offset=".55" stop-color="#edc1b9"></stop>
+              <stop offset="1" stop-color="#cb918c"></stop>
+            </radialGradient>
+            <linearGradient id="leafGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#aeb8a0"></stop>
+              <stop offset=".5" stop-color="#7f917d"></stop>
+              <stop offset="1" stop-color="#53685a"></stop>
+            </linearGradient>
+            <radialGradient id="groundGlowGrad" cx=".5" cy=".5" r=".5">
+              <stop offset="0" stop-color="#e0b46e" stop-opacity=".5"></stop>
+              <stop offset=".55" stop-color="#b67b49" stop-opacity=".15"></stop>
+              <stop offset="1" stop-color="#000000" stop-opacity="0"></stop>
+            </radialGradient>
+            <radialGradient id="cakeAuraGrad" cx=".5" cy=".5" r=".5">
+              <stop offset="0" stop-color="#ffdca0" stop-opacity=".22"></stop>
+              <stop offset=".55" stop-color="#d99d6a" stop-opacity=".07"></stop>
+              <stop offset="1" stop-color="#000000" stop-opacity="0"></stop>
+            </radialGradient>
+
+            <pattern id="candleStripe" width="8" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(28)">
+              <rect width="8" height="7" fill="#f8e9df"></rect>
+              <rect y="7" width="8" height="7" fill="#d9a9a1"></rect>
+            </pattern>
+
+            <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%">
+              <feGaussianBlur stdDeviation="12"></feGaussianBlur>
+            </filter>
+            <filter id="flameGlow" x="-180%" y="-180%" width="460%" height="460%">
+              <feGaussianBlur stdDeviation="5" result="blur"></feGaussianBlur>
+              <feMerge>
+                <feMergeNode in="blur"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+              </feMerge>
+            </filter>
+            <filter id="smallBlur" x="-100%" y="-100%" width="300%" height="300%">
+              <feGaussianBlur stdDeviation="3"></feGaussianBlur>
+            </filter>
+            <filter id="standShadow" x="-60%" y="-80%" width="220%" height="260%">
+              <feGaussianBlur stdDeviation="14"></feGaussianBlur>
+            </filter>
+            <filter id="smokeBlur" x="-100%" y="-100%" width="300%" height="300%">
+              <feGaussianBlur stdDeviation="1.3"></feGaussianBlur>
+            </filter>
+
+            <path id="rosePetalOuter" d="M0 0 C-15 -27 18 -40 31 -18 C40 0 23 23 0 0Z"></path>
+            <path id="rosePetalMid" d="M0 0 C-9 -19 14 -28 23 -12 C29 1 16 17 0 0Z"></path>
+            <path id="rosePetalInner" d="M0 0 C-6 -12 9 -19 15 -8 C19 1 10 11 0 0Z"></path>
+            <path id="leafShape" d="M0 0 C-15 -7 -27 -27 -18 -40 C-2 -37 8 -19 0 0Z"></path>
+            <path id="goldLeafShape" d="M0 0 C-9 -5 -14 -16 -7 -25 C3 -21 7 -10 0 0Z"></path>
+            <path id="fourPointStar" d="M0 -7 L1.6 -1.6 L7 0 L1.6 1.6 L0 7 L-1.6 1.6 L-7 0 L-1.6 -1.6 Z"></path>
+
+            <g id="rose">
+              <circle r="19" fill="url(#roseMidGrad)"></circle>
+              <g fill="url(#roseOuterGrad)">
+                <use href="#rosePetalOuter"></use>
+                <use href="#rosePetalOuter" transform="rotate(72)"></use>
+                <use href="#rosePetalOuter" transform="rotate(144)"></use>
+                <use href="#rosePetalOuter" transform="rotate(216)"></use>
+                <use href="#rosePetalOuter" transform="rotate(288)"></use>
+              </g>
+              <g fill="url(#roseMidGrad)" transform="scale(.73)">
+                <use href="#rosePetalMid"></use>
+                <use href="#rosePetalMid" transform="rotate(72)"></use>
+                <use href="#rosePetalMid" transform="rotate(144)"></use>
+                <use href="#rosePetalMid" transform="rotate(216)"></use>
+                <use href="#rosePetalMid" transform="rotate(288)"></use>
+              </g>
+              <g fill="#fbe8e1" transform="scale(.48) rotate(16)">
+                <use href="#rosePetalInner"></use>
+                <use href="#rosePetalInner" transform="rotate(72)"></use>
+                <use href="#rosePetalInner" transform="rotate(144)"></use>
+                <use href="#rosePetalInner" transform="rotate(216)"></use>
+                <use href="#rosePetalInner" transform="rotate(288)"></use>
+              </g>
+              <path d="M-7 2 C-11 -4 -7 -11 0 -11 C8 -11 12 -4 8 2 C5 7 -2 8 -6 4 C-9 1 -8 -4 -4 -5 C-1 -6 2 -4 2 -1 C2 2 -1 3 -2 1" fill="none" stroke="#b47776" stroke-width="1.55" stroke-linecap="round"></path>
+              <circle r="1.7" fill="#b47776"></circle>
+            </g>
+
+            <g id="leaf">
+              <use href="#leafShape" fill="url(#leafGrad)"></use>
+              <path d="M-2 -6 C-7 -15 -12 -23 -16 -32" fill="none" stroke="#c8d0b9" stroke-width=".8" stroke-linecap="round" opacity=".45"></path>
+            </g>
+
+            <g id="blossom">
+              <circle cx="0" cy="-6" r="4.6" fill="#f7e3db"></circle>
+              <circle cx="5.7" cy="-1.8" r="4.6" fill="#f1d4cb"></circle>
+              <circle cx="3.5" cy="4.8" r="4.6" fill="#f7e3db"></circle>
+              <circle cx="-3.5" cy="4.8" r="4.6" fill="#efd0c7"></circle>
+              <circle cx="-5.7" cy="-1.8" r="4.6" fill="#f7e3db"></circle>
+              <circle r="2.2" fill="#c59b5f"></circle>
+            </g>
+          </defs>
+
+          <ellipse cx="380" cy="855" rx="300" ry="60" fill="url(#cakeAuraGrad)"></ellipse>
+          <ellipse cx="380" cy="866" rx="225" ry="27" fill="#000000" opacity=".48" filter="url(#standShadow)"></ellipse>
+
+          <!-- cake stand -->
+          <g class="cake-stand">
+            <ellipse cx="380" cy="848" rx="160" ry="19" fill="url(#goldDark)"></ellipse>
+            <ellipse cx="380" cy="843" rx="151" ry="16" fill="url(#gold)"></ellipse>
+            <path d="M351 785 L409 785 L427 839 C395 851 365 851 333 839 Z" fill="url(#gold)"></path>
+            <path d="M361 790 L373 838" fill="none" stroke="#fff0c9" stroke-width="2" opacity=".38"></path>
+            <ellipse cx="380" cy="786" rx="282" ry="34" fill="url(#goldDark)"></ellipse>
+            <ellipse cx="380" cy="777" rx="282" ry="34" fill="url(#gold)"></ellipse>
+            <ellipse cx="380" cy="771" rx="264" ry="26" fill="url(#plateTopGrad)"></ellipse>
+            <path d="M120 773 C195 801 565 801 640 773" fill="none" stroke="#fff1cb" stroke-width="1" opacity=".55"></path>
+            <path d="M146 787 C225 811 535 811 614 787" fill="none" stroke="#6b481f" stroke-width="1" opacity=".35"></path>
+            <ellipse cx="380" cy="758" rx="252" ry="18" fill="#f4e5d2"></ellipse>
+            <ellipse cx="380" cy="755" rx="249" ry="15" fill="#fff8ed"></ellipse>
+            <path d="M164 755 C235 772 525 772 596 755" fill="none" stroke="#c69c62" stroke-width="1.2" opacity=".7"></path>
+          </g>
+
+          <!-- bottom tier -->
+          <g class="tier tier-bottom">
+            <ellipse cx="380" cy="748" rx="239" ry="23" fill="#4c2b23" opacity=".25" filter="url(#smallBlur)"></ellipse>
+            <path d="M140 588 L140 724 C140 742 154 752 174 752 L586 752 C606 752 620 742 620 724 L620 588 Z" fill="url(#tierBottomGrad)"></path>
+            <ellipse cx="380" cy="588" rx="240" ry="32" fill="url(#frostingTopGrad)"></ellipse>
+            <path d="M143 589
+              C218 618 305 626 380 626
+              C455 626 542 618 617 589
+              L617 598
+              C607 601 603 611 598 621
+              C593 631 582 633 578 621
+              C574 610 564 610 560 621
+              C555 633 543 636 538 624
+              C533 612 522 612 517 624
+              C511 636 498 639 493 627
+              C488 615 477 615 472 627
+              C466 640 453 640 448 628
+              C443 616 432 616 427 628
+              C421 641 408 641 403 629
+              C398 617 387 617 382 629
+              C376 642 363 642 358 630
+              C353 618 342 618 337 630
+              C331 643 318 643 313 631
+              C308 619 297 619 292 631
+              C286 644 273 643 268 631
+              C263 619 252 620 247 632
+              C241 644 228 643 223 631
+              C218 619 207 620 202 632
+              C196 644 183 643 178 631
+              C173 619 162 620 157 632
+              C152 641 147 639 143 631 Z"
+              fill="url(#frostingGrad)"></path>
+            <path d="M148 700 Q380 728 612 700 L613 716 Q380 746 147 716 Z" fill="url(#gold)"></path>
+            <path d="M152 716 Q380 744 608 716" fill="none" stroke="#fff1d0" stroke-width="4.2" stroke-linecap="round" stroke-dasharray="0.1 24" opacity=".8"></path>
+            <path d="M160 667 Q380 693 600 667" fill="none" stroke="#c8a16d" stroke-width=".9" opacity=".45"></path>
+            <path d="M154 676 Q380 703 606 676" fill="none" stroke="#c8a16d" stroke-width=".7" opacity=".28"></path>
+
+            <g class="seal" transform="translate(380 683)">
+              <circle r="30" fill="#3e2816" opacity=".18" filter="url(#smallBlur)"></circle>
+              <circle r="29" fill="url(#gold)"></circle>
+              <circle r="24" fill="none" stroke="#63411f" stroke-opacity=".62" stroke-width=".8"></circle>
+              <circle r="21" fill="none" stroke="#fff0c8" stroke-opacity=".46" stroke-width=".5" stroke-dasharray="1 3"></circle>
+              <text y="7" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="22" letter-spacing=".5" fill="#4e3217">19</text>
+            </g>
+          </g>
+
+          <!-- middle tier -->
+          <g class="tier tier-middle">
+            <ellipse cx="380" cy="585" rx="166" ry="16" fill="#4c2b23" opacity=".22" filter="url(#smallBlur)"></ellipse>
+            <path d="M215 455 L215 566 C215 580 227 588 243 588 L517 588 C533 588 545 580 545 566 L545 455 Z" fill="url(#tierMiddleGrad)"></path>
+            <ellipse cx="380" cy="455" rx="165" ry="25" fill="url(#frostingTopGrad)"></ellipse>
+            <path d="M217 456
+              C270 479 326 485 380 485
+              C434 485 490 479 543 456
+              L543 463
+              C535 466 532 474 528 482
+              C523 491 514 493 510 483
+              C506 474 498 474 494 484
+              C490 494 480 496 476 486
+              C472 477 464 477 460 486
+              C456 496 446 498 442 488
+              C438 479 430 479 426 488
+              C422 498 412 500 408 490
+              C404 481 396 481 392 490
+              C388 500 378 502 374 492
+              C370 483 362 483 358 492
+              C354 502 344 501 340 491
+              C336 482 328 482 324 492
+              C320 502 310 501 306 491
+              C302 482 294 482 290 492
+              C286 501 276 500 272 490
+              C268 481 260 481 256 491
+              C252 500 242 499 238 489
+              C234 480 226 480 222 489
+              C219 495 218 496 217 493 Z"
+              fill="url(#frostingGrad)"></path>
+            <path d="M223 539 Q380 562 537 539 L538 552 Q380 577 222 552 Z" fill="url(#gold)"></path>
+            <path d="M226 552 Q380 575 534 552" fill="none" stroke="#fff1d0" stroke-width="3.7" stroke-linecap="round" stroke-dasharray="0.1 21" opacity=".78"></path>
+            <path d="M232 511 Q248 521 264 511 Q280 521 296 511 Q312 521 328 511 Q344 521 360 511 Q376 521 392 511 Q408 521 424 511 Q440 521 456 511 Q472 521 488 511 Q504 521 520 511 Q532 519 545 512" fill="none" stroke="#fff9f1" stroke-width="2.2" stroke-linecap="round" opacity=".86"></path>
+            <path d="M232 518 Q248 528 264 518 Q280 528 296 518 Q312 528 328 518 Q344 528 360 518 Q376 528 392 518 Q408 528 424 518 Q440 528 456 518 Q472 528 488 518 Q504 528 520 518 Q532 526 545 519" fill="none" stroke="#c8a16d" stroke-width=".8" opacity=".5"></path>
+          </g>
+
+          <!-- top tier -->
+          <g class="tier tier-top">
+            <ellipse cx="380" cy="452" rx="108" ry="12" fill="#4c2b23" opacity=".2" filter="url(#smallBlur)"></ellipse>
+            <path d="M275 322 L275 434 C275 446 284 454 298 454 L462 454 C476 454 485 446 485 434 L485 322 Z" fill="url(#tierTopGrad)"></path>
+            <ellipse cx="380" cy="322" rx="105" ry="18" fill="url(#frostingTopGrad)"></ellipse>
+            <path d="M277 323
+              C309 338 345 341 380 341
+              C415 341 451 338 483 323
+              L483 328
+              C477 331 475 337 472 343
+              C468 350 461 352 458 344
+              C455 338 449 338 446 345
+              C442 353 435 355 431 347
+              C428 340 421 340 418 347
+              C414 355 407 356 403 348
+              C400 341 393 341 390 348
+              C386 356 379 357 375 349
+              C372 342 365 342 362 349
+              C358 356 351 355 347 347
+              C344 340 337 340 334 347
+              C330 354 323 353 319 346
+              C316 340 309 340 306 347
+              C302 354 295 353 291 346
+              C288 340 282 340 279 345
+              C278 343 277 335 277 332 Z"
+              fill="url(#frostingGrad)"></path>
+            <path d="M281 415 Q380 432 479 415 L480 426 Q380 445 280 426 Z" fill="url(#gold)"></path>
+            <path d="M285 426 Q380 443 475 426" fill="none" stroke="#fff1d0" stroke-width="3.3" stroke-linecap="round" stroke-dasharray="0.1 18" opacity=".8"></path>
+            <path d="M288 391 Q305 400 322 391 Q339 400 356 391 Q373 400 390 391 Q407 400 424 391 Q441 400 458 391 Q470 398 478 392" fill="none" stroke="#fff9f1" stroke-width="1.9" stroke-linecap="round" opacity=".85"></path>
+            <path d="M288 397 Q305 406 322 397 Q339 406 356 397 Q373 406 390 397 Q407 406 424 397 Q441 406 458 397 Q470 404 478 398" fill="none" stroke="#c8a16d" stroke-width=".7" opacity=".5"></path>
+          </g>
+
+          <!-- floral cascade -->
+          <g class="flowers" aria-hidden="true">
+            <g transform="translate(468 383) rotate(-14) scale(.72)"><use href="#rose"></use></g>
+            <g transform="translate(492 411) rotate(18) scale(.56)"><use href="#rose"></use></g>
+            <g transform="translate(461 432) rotate(66) scale(.46)"><use href="#rose"></use></g>
+            <g transform="translate(486 371) rotate(28) scale(.88)"><use href="#leaf"></use></g>
+            <g transform="translate(507 394) rotate(105) scale(.7)"><use href="#leaf"></use></g>
+            <g transform="translate(446 415) rotate(-56) scale(.64)"><use href="#leaf"></use></g>
+            <g transform="translate(480 449) rotate(144) scale(.7)"><use href="#goldLeafShape" fill="url(#gold)"></use></g>
+            <g transform="translate(450 365) scale(.85)"><use href="#blossom"></use></g>
+            <g transform="translate(502 431) scale(.7)"><use href="#blossom"></use></g>
+
+            <g transform="translate(231 502) rotate(22) scale(.66)"><use href="#rose"></use></g>
+            <g transform="translate(214 534) rotate(-8) scale(.82)"><use href="#rose"></use></g>
+            <g transform="translate(246 554) rotate(48) scale(.53)"><use href="#rose"></use></g>
+            <g transform="translate(216 480) rotate(-38) scale(.82)"><use href="#leaf"></use></g>
+            <g transform="translate(196 522) rotate(-112) scale(.7)"><use href="#leaf"></use></g>
+            <g transform="translate(230 567) rotate(116) scale(.6)"><use href="#leaf"></use></g>
+            <g transform="translate(253 518) rotate(31) scale(.66)"><use href="#goldLeafShape" fill="url(#gold)"></use></g>
+            <g transform="translate(255 477) scale(.8)"><use href="#blossom"></use></g>
+
+            <g transform="translate(188 631) rotate(-24) scale(.58)"><use href="#rose"></use></g>
+            <g transform="translate(170 663) rotate(12) scale(.78)"><use href="#rose"></use></g>
+            <g transform="translate(155 702) rotate(55) scale(.6)"><use href="#rose"></use></g>
+            <g transform="translate(185 728) rotate(-36) scale(.42)"><use href="#rose"></use></g>
+            <g transform="translate(198 610) rotate(-54) scale(.92)"><use href="#leaf"></use></g>
+            <g transform="translate(147 641) rotate(-118) scale(.8)"><use href="#leaf"></use></g>
+            <g transform="translate(160 687) rotate(-24) scale(.74)"><use href="#leaf"></use></g>
+            <g transform="translate(136 720) rotate(-96) scale(.62)"><use href="#leaf"></use></g>
+            <g transform="translate(204 702) rotate(45) scale(.7)"><use href="#goldLeafShape" fill="url(#gold)"></use></g>
+            <g transform="translate(180 605) scale(.85)"><use href="#blossom"></use></g>
+            <g transform="translate(144 671) scale(.65)"><use href="#blossom"></use></g>
+
+            <g transform="translate(575 679) rotate(18) scale(.52)"><use href="#rose"></use></g>
+            <g transform="translate(596 709) rotate(-16) scale(.4)"><use href="#rose"></use></g>
+            <g transform="translate(557 697) rotate(80) scale(.68)"><use href="#leaf"></use></g>
+            <g transform="translate(604 678) rotate(34) scale(.56)"><use href="#leaf"></use></g>
+            <g transform="translate(614 716) rotate(-28) scale(.52)"><use href="#goldLeafShape" fill="url(#gold)"></use></g>
+
+            <g transform="translate(291 340) rotate(22) scale(.34)"><use href="#rose"></use></g>
+            <g transform="translate(466 337) rotate(-30) scale(.32)"><use href="#rose"></use></g>
+            <g transform="translate(277 351) rotate(76) scale(.54)"><use href="#leaf"></use></g>
+            <g transform="translate(477 350) rotate(120) scale(.5)"><use href="#leaf"></use></g>
+          </g>
+
+          <!-- cake topper -->
+          <g class="topper" aria-hidden="true">
+            <path d="M365 192 L367 322" fill="none" stroke="url(#gold)" stroke-width="2.1"></path>
+            <path d="M397 192 L394 322" fill="none" stroke="url(#gold)" stroke-width="2.1"></path>
+            <text x="381" y="274" text-anchor="middle" class="topper-number">19</text>
+            <g transform="translate(365 181) scale(.9)" fill="url(#goldBright)">
+              <use href="#fourPointStar"></use>
+            </g>
+            <g transform="translate(408 196) scale(.55)" fill="#f5d99e">
+              <use href="#fourPointStar"></use>
+            </g>
+          </g>
+
+          <!-- candles -->
+          <g class="candles">
+            <g class="candle" transform="translate(314 327)" style="--flicker-delay: -0.3s">
+              <rect x="-4.2" y="-105" width="8.4" height="105" rx="4.2" fill="url(#candleBlush)"></rect>
+              <rect x="-4.2" y="-105" width="8.4" height="105" rx="4.2" fill="url(#candleStripe)" opacity=".5"></rect>
+              <path d="M-4.2 -105 L4.2 -105 L4.2 -96 L-4.2 -96 Z" fill="#f8e9df"></path>
+              <path d="M0 -112 L0 -105" stroke="#4d372b" stroke-width="1.4" stroke-linecap="round"></path>
+              <ellipse cx="0" cy="-1" rx="10" ry="3.4" fill="url(#goldBright)"></ellipse>
+              <path d="M-9 -2 L9 -2 L7 -9 L-7 -9 Z" fill="url(#gold)"></path>
+              <g class="flame" transform="translate(0 -119)">
+                <ellipse cx="0" cy="7" rx="16" ry="23" fill="#ffbf68" opacity=".16" filter="url(#softGlow)"></ellipse>
+                <path d="M0 9 C-8 6 -11 -2 -6 -12 C-3 -18 0 -26 2 -32 C6 -23 14 -14 12 -3 C10 5 5 9 0 9Z" fill="url(#flameGrad)" filter="url(#flameGlow)"></path>
+                <path d="M0 7 C-4 5 -5 -1 -2 -7 C0 -11 0 -15 1 -19 C4 -13 7 -7 5 -1 C4 4 2 7 0 7Z" fill="#fff8d8"></path>
+              </g>
+              <g class="smoke" transform="translate(0 -145)">
+                <path pathLength="100" d="M0 0 C-7 -9 7 -16 1 -28 C-5 -39 7 -47 2 -64" fill="none" stroke="#e8d8cd" stroke-width="2" stroke-linecap="round" filter="url(#smokeBlur)"></path>
+              </g>
+            </g>
+
+            <g class="candle" transform="translate(349 328)" style="--flicker-delay: -1.1s">
+              <rect x="-4" y="-122" width="8" height="122" rx="4" fill="url(#candleIvory)"></rect>
+              <rect x="-4" y="-122" width="8" height="122" rx="4" fill="url(#candleStripe)" opacity=".28"></rect>
+              <path d="M-4 -122 L4 -122 L4 -112 L-4 -112 Z" fill="#fff8ed"></path>
+              <path d="M0 -129 L0 -122" stroke="#4d372b" stroke-width="1.4" stroke-linecap="round"></path>
+              <ellipse cx="0" cy="-1" rx="10" ry="3.4" fill="url(#goldBright)"></ellipse>
+              <path d="M-9 -2 L9 -2 L7 -9 L-7 -9 Z" fill="url(#gold)"></path>
+              <g class="flame" transform="translate(0 -136)">
+                <ellipse cx="0" cy="7" rx="16" ry="23" fill="#ffbf68" opacity=".16" filter="url(#softGlow)"></ellipse>
+                <path d="M0 9 C-8 6 -11 -2 -6 -12 C-3 -18 0 -26 2 -32 C6 -23 14 -14 12 -3 C10 5 5 9 0 9Z" fill="url(#flameGrad)" filter="url(#flameGlow)"></path>
+                <path d="M0 7 C-4 5 -5 -1 -2 -7 C0 -11 0 -15 1 -19 C4 -13 7 -7 5 -1 C4 4 2 7 0 7Z" fill="#fff8d8"></path>
+              </g>
+              <g class="smoke" transform="translate(0 -162)">
+                <path pathLength="100" d="M0 0 C-7 -9 7 -16 1 -28 C-5 -39 7 -47 2 -64" fill="none" stroke="#e8d8cd" stroke-width="2" stroke-linecap="round" filter="url(#smokeBlur)"></path>
+              </g>
+            </g>
+
+            <g class="candle" transform="translate(412 327)" style="--flicker-delay: -0.7s">
+              <rect x="-4" y="-116" width="8" height="116" rx="4" fill="url(#candleBlush)"></rect>
+              <rect x="-4" y="-116" width="8" height="116" rx="4" fill="url(#candleStripe)" opacity=".42"></rect>
+              <path d="M-4 -116 L4 -116 L4 -107 L-4 -107 Z" fill="#f9ece4"></path>
+              <path d="M0 -123 L0 -116" stroke="#4d372b" stroke-width="1.4" stroke-linecap="round"></path>
+              <ellipse cx="0" cy="-1" rx="10" ry="3.4" fill="url(#goldBright)"></ellipse>
+              <path d="M-9 -2 L9 -2 L7 -9 L-7 -9 Z" fill="url(#gold)"></path>
+              <g class="flame" transform="translate(0 -130)">
+                <ellipse cx="0" cy="7" rx="16" ry="23" fill="#ffbf68" opacity=".16" filter="url(#softGlow)"></ellipse>
+                <path d="M0 9 C-8 6 -11 -2 -6 -12 C-3 -18 0 -26 2 -32 C6 -23 14 -14 12 -3 C10 5 5 9 0 9Z" fill="url(#flameGrad)" filter="url(#flameGlow)"></path>
+                <path d="M0 7 C-4 5 -5 -1 -2 -7 C0 -11 0 -15 1 -19 C4 -13 7 -7 5 -1 C4 4 2 7 0 7Z" fill="#fff8d8"></path>
+              </g>
+              <g class="smoke" transform="translate(0 -156)">
+                <path pathLength="100" d="M0 0 C-7 -9 7 -16 1 -28 C-5 -39 7 -47 2 -64" fill="none" stroke="#e8d8cd" stroke-width="2" stroke-linecap="round" filter="url(#smokeBlur)"></path>
+              </g>
+            </g>
+
+            <g class="candle" transform="translate(447 328)" style="--flicker-delay: -1.6s">
+              <rect x="-4.2" y="-100" width="8.4" height="100" rx="4.2" fill="url(#candleIvory)"></rect>
+              <rect x="-4.2" y="-100" width="8.4" height="100" rx="4.2" fill="url(#candleStripe)" opacity=".22"></rect>
+              <path d="M-4.2 -100 L4.2 -100 L4.2 -91 L-4.2 -91 Z" fill="#fff8ed"></path>
+              <path d="M0 -107 L0 -100" stroke="#4d372b" stroke-width="1.4" stroke-linecap="round"></path>
+              <ellipse cx="0" cy="-1" rx="10" ry="3.4" fill="url(#goldBright)"></ellipse>
+              <path d="M-9 -2 L9 -2 L7 -9 L-7 -9 Z" fill="url(#gold)"></path>
+              <g class="flame" transform="translate(0 -114)">
+                <ellipse cx="0" cy="7" rx="16" ry="23" fill="#ffbf68" opacity=".16" filter="url(#softGlow)"></ellipse>
+                <path d="M0 9 C-8 6 -11 -2 -6 -12 C-3 -18 0 -26 2 -32 C6 -23 14 -14 12 -3 C10 5 5 9 0 9Z" fill="url(#flameGrad)" filter="url(#flameGlow)"></path>
+                <path d="M0 7 C-4 5 -5 -1 -2 -7 C0 -11 0 -15 1 -19 C4 -13 7 -7 5 -1 C4 4 2 7 0 7Z" fill="#fff8d8"></path>
+              </g>
+              <g class="smoke" transform="translate(0 -140)">
+                <path pathLength="100" d="M0 0 C-7 -9 7 -16 1 -28 C-5 -39 7 -47 2 -64" fill="none" stroke="#e8d8cd" stroke-width="2" stroke-linecap="round" filter="url(#smokeBlur)"></path>
+              </g>
+            </g>
+          </g>
+
+          <!-- finishing sparkles -->
+          <g class="svg-sparkles" aria-hidden="true">
+            <g transform="translate(115 419) scale(.8)" fill="#f0cf92"><use href="#fourPointStar"></use></g>
+            <g transform="translate(646 479) scale(.6)" fill="#f7dcae"><use href="#fourPointStar"></use></g>
+            <g transform="translate(96 692) scale(.45)" fill="#e7bd7d"><use href="#fourPointStar"></use></g>
+            <g transform="translate(668 616) scale(.4)" fill="#f4d7a1"><use href="#fourPointStar"></use></g>
+            <g transform="translate(265 190) scale(.35)" fill="#f1d49e"><use href="#fourPointStar"></use></g>
+            <circle cx="126" cy="489" r="2" fill="#e7bd7d" opacity=".75"></circle>
+            <circle cx="635" cy="427" r="1.6" fill="#f7dcae" opacity=".65"></circle>
+            <circle cx="649" cy="724" r="1.4" fill="#e7bd7d" opacity=".6"></circle>
+            <circle cx="108" cy="611" r="1.8" fill="#f1d49e" opacity=".6"></circle>
+          </g>
+        </svg>
+      </div>
+
+      <div class="petals" aria-hidden="true">
+        <i class="petal petal--1"></i>
+        <i class="petal petal--2"></i>
+        <i class="petal petal--3"></i>
+        <i class="petal petal--4"></i>
+        <i class="petal petal--5"></i>
+        <i class="petal petal--6"></i>
+      </div>
+
+      <div class="wish-toast" id="wish-toast" role="status" aria-live="polite">
+        <span aria-hidden="true">✦</span>
+        <span>愿望，已经听见了</span>
+        <span aria-hidden="true">✦</span>
+      </div>
+    </section>
+
+    <section class="wish-card reveal" style="--delay: .78s" aria-labelledby="wish-title">
+      <div class="wish-card__head">
+        <span id="wish-title">A WISH FOR YOU</span>
+        <span>01 / 19</span>
+      </div>
+
+      <p class="wish-card__text">
+        愿你此后的每一天，<br>
+        有星辰可追，有热爱可奔赴，<br>
+        有温柔可栖。
+      </p>
+
+      <button class="wish-btn" id="wish-btn" type="button" aria-controls="wish-secret">
+        <span class="wish-btn__label">许个愿 · 吹蜡烛</span>
+        <span class="wish-btn__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M12 3.2c1.7 2.1 3.1 3.8 3.1 5.5a3.1 3.1 0 0 1-6.2 0c0-1.7 1.4-3.4 3.1-5.5Z" stroke="currentColor" stroke-width="1.2"></path>
+            <path d="M7.4 13.1h9.2v6.2a1.5 1.5 0 0 1-1.5 1.5H8.9a1.5 1.5 0 0 1-1.5-1.5v-6.2Z" stroke="currentColor" stroke-width="1.2"></path>
+            <path d="M9.2 13.1v-1.8M14.8 13.1v-1.8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"></path>
+          </svg>
+        </span>
+        <span class="wish-btn__shine" aria-hidden="true"></span>
+      </button>
+
+      <p class="wish-card__hint" id="wish-hint">轻触按钮，让星光替你把愿望寄出</p>
+
+      <p class="wish-card__secret" id="wish-secret" aria-live="polite">
+        <span aria-hidden="true">✦</span>
+        愿望已被星光收好。十九岁的你，请继续发光。
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>MADE WITH LOVE</span>
+    <span class="footer__dot" aria-hidden="true"></span>
+    <span>FOR 陈立晖 · 19TH</span>
+    <span class="footer__dot" aria-hidden="true"></span>
+    <span>2026</span>
+  </footer>
+
+  <canvas id="fx" aria-hidden="true"></canvas>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
