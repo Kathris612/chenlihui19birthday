@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kathris612.github.io/chenlihui19birthday/sitemap.xml
