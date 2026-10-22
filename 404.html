@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>迷路了 · 陈立晖 19</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .not-found {
+      display: grid;
+      place-items: center;
+      min-height: 100svh;
+      padding: 28px;
+      text-align: center;
+    }
+
+    .not-found__number {
+      position: fixed;
+      z-index: 0;
+      top: 50%;
+      left: 50%;
+      color: transparent;
+      font-family: var(--display-num);
+      font-size: min(54vw, 38rem);
+      line-height: 0.7;
+      -webkit-text-stroke: 1px rgba(214, 179, 122, 0.1);
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+    }
+
+    .not-found__inner {
+      position: relative;
+      z-index: 2;
+      width: min(100%, 560px);
+      padding: clamp(34px, 6vw, 58px) clamp(24px, 5vw, 46px);
+      border: 1px solid rgba(214, 179, 122, 0.22);
+      background: linear-gradient(135deg, rgba(255, 248, 239, 0.06), rgba(255, 248, 239, 0.015));
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.28);
+      -webkit-backdrop-filter: blur(18px);
+      backdrop-filter: blur(18px);
+    }
+
+    .not-found__eyebrow {
+      margin: 0 0 22px;
+      color: rgba(214, 179, 122, 0.74);
+      font-size: 8px;
+      letter-spacing: 0.32em;
+    }
+
+    .not-found h1 {
+      margin: 0;
+      font-family: var(--serif);
+      font-size: clamp(2.1rem, 5.2vw, 3.35rem);
+      font-weight: 400;
+      letter-spacing: 0.07em;
+      line-height: 1.55;
+    }
+
+    .not-found__copy {
+      margin: 20px 0 30px;
+      color: rgba(247, 237, 225, 0.5);
+      font-size: 0.82rem;
+      letter-spacing: 0.12em;
+      line-height: 2;
+    }
+
+    .not-found a {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 13px 24px;
+      border: 1px solid rgba(214, 179, 122, 0.48);
+      color: var(--gold-bright);
+      font-family: var(--serif);
+      font-size: 0.8rem;
+      letter-spacing: 0.16em;
+      text-decoration: none;
+      transition: color 0.4s ease, background 0.4s ease, border-color 0.4s ease;
+    }
+
+    .not-found a:hover {
+      border-color: transparent;
+      color: #24190d;
+      background: linear-gradient(112deg, #f7e5c2, #d7b273 47%, #f0d6a3);
+    }
+  </style>
+</head>
+<body class="not-found">
+  <span class="not-found__number" aria-hidden="true">19</span>
+  <main class="not-found__inner">
+    <p class="not-found__eyebrow">404 · LOST IN THE STARS</p>
+    <h1>这一页，<br>去别处发光了。</h1>
+    <p class="not-found__copy">没关系，烛光还在，蛋糕也还在。</p>
+    <a href="./">回到生日现场 <span aria-hidden="true">→</span></a>
+  </main>
+</body>
+</html>
